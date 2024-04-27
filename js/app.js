@@ -104,4 +104,4 @@ function ejecutar(){
 }
 ejecutar();
 
-//   tiendasAtencion[i].estimado();
+
