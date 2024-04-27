@@ -83,8 +83,11 @@ function render (tienda){
 
   const ubicacion = document.createElement('section');
   ubicacion.classList.add('ubicacion');
-  ubicacion.textContent = tienda.lugarTienda;
   contenedor.appendChild(ubicacion);
+
+  const tiendaCiudad = document.createElement('h2');
+  tiendaCiudad.textContent= tienda.lugarTienda;
+  ubicacion.appendChild(tiendaCiudad);
 
   const list = document.createElement('ul');
   ubicacion.appendChild(list);

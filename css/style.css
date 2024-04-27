@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+h1,
+.ubicacion h2,
+#seattle h2,
+#tokyo h2,
+#dubai h2,
+#paris h2,
+#lima h2
+{
+    font-family: 'Righteous', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
