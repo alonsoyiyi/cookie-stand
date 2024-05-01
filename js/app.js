@@ -1,6 +1,3 @@
-/* eslint-disable indent */
-
-'use strict';
 
 const seattle = {
   lugarTienda : 'Seattle',
