@@ -17,7 +17,6 @@ h1{
 }
 
 h1,
-.ubicacion h2,
 #seattle h2,
 #tokyo h2,
 #dubai h2,
@@ -29,7 +28,6 @@ h1,
     font-style: italic;
 }
 
-.ubicacion h2,
 #seattle h2,
 #tokyo h2,
 #dubai h2,
@@ -38,11 +36,11 @@ h1,
     margin-top: 50px;
 }
 
-#seattle ul,
-#tokyo ul,
-#dubai ul,
-#paris ul,
-#lima ul{
+#seattle p,
+#tokyo p,
+#dubai p,
+#paris p,
+#lima p {
     font-family:'Times New Roman', Times, serif;
     margin-top: 10px;
     list-style-type: none;
@@ -126,5 +124,5 @@ tbody tr td:last-child {
 }
 
 footer{
-    margin-bottom: 50px auto;
+    margin-bottom:100px;
 }

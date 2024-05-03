@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 
 function Location(
@@ -26,7 +27,6 @@ Location.prototype.renderFila = function () {
     td.textContent = this.cookiesXhour[i];
     tr.appendChild(td);
   }
-  // Agrega el total de ventas para esta tienda
   const tdTotal = document.createElement('td');
   tdTotal.textContent = this.totalCookies;
   tr.appendChild(tdTotal);
@@ -106,7 +106,6 @@ function renderCabeza() {
 }
 
 function renderTiendas() {
-  // Renderizar filas para cada tienda
   for (let i = 0; i < locations.length; i++) {
     locations[i].estimate();
     const trow = locations[i].renderFila();
@@ -128,7 +127,6 @@ function renderTotalesPorHora() {
     tdTotalHora.textContent = totalHora;
     totalPorHoraFila.appendChild(tdTotalHora);
   }
-  // Agrega el total general de ventas
   const tdTotalGlobal = document.createElement('td');
   const totalGlobal = locations.reduce((acc, loc) => acc + loc.totalCookies, 0);
   tdTotalGlobal.textContent = totalGlobal;
@@ -141,5 +139,3 @@ function ejecutar() {
   renderTiendas();
   renderTotalesPorHora();
 }
-
-ejecutar();

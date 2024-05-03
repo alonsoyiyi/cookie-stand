@@ -9,3 +9,7 @@ Galletitas sabrosas para personas y salmones
 ## Evaluación de lighthouse lab 07
 
 ![Imagen de Lighthouse](./img/Captura%20de%20pantalla%202024-05-01%20010629.png)
+
+## Evaluación de lighthouse lab 07
+
+![Imagen de Lighthouse](./img/Captura%20de%20pantalla%202024-05-03%20025258.png)
