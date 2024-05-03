@@ -37,7 +37,7 @@ const seattleIndex = [
   ];
 
 
-function renderIndex(nombreTienda, arrayTienda) {
+function datosTienda(nombreTienda, arrayTienda) {
     const sectionTienda = document.querySelector(`section#${nombreTienda.toLowerCase()}`);
     
     const h2 = document.createElement('h2');
@@ -50,11 +50,12 @@ function renderIndex(nombreTienda, arrayTienda) {
         sectionTienda.appendChild(p);
       });
   }
-  
-  renderIndex(seattleIndex[0], seattleIndex);
-  renderIndex(tokyoIndex[0], tokyoIndex);
-  renderIndex(dubaiIndex[0], dubaiIndex);
-  renderIndex(parisIndex[0], parisIndex);
-  renderIndex(limaIndex[0], limaIndex);
-  
+  function renderIndex(){
+  datosTienda(seattleIndex[0], seattleIndex);
+  datosTienda(tokyoIndex[0], tokyoIndex);
+  datosTienda(dubaiIndex[0], dubaiIndex);
+  datosTienda(parisIndex[0], parisIndex);
+  datosTienda(limaIndex[0], limaIndex);
+  }
 
+  renderIndex();
