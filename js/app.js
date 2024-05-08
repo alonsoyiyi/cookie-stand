@@ -89,6 +89,38 @@ const thead = table.querySelector('thead');
 const tbody = table.querySelector('tbody');
 const tfoot = table.querySelector('tfoot');
 
+//lab 09
+const inputLocationName = document.getElementById('location_name');
+const inputMinCustXhour = document.getElementById('min_custXhour');
+const inputMaxCustXhour = document.getElementById('max_custXhour');
+const inputCookiesXsale = document.getElementById('avg_cookiesXsale');
+const buttonAdd = document.getElementById('button_add');
+
+
+buttonAdd.addEventListener('click', function(event) {
+  event.preventDefault();
+  if (!inputLocationName.value || !inputMinCustXhour.value || !inputMaxCustXhour.value || !inputCookiesXsale.value){
+    return;
+  }
+  const dupliLocation = locations.find(function(location){
+   return location.name.toLowerCase() === inputLocationName.value.toLowerCase();
+  });
+
+  if (dupliLocation) return;
+
+  const newLocation = new Location(inputLocationName.value, inputMinCustXhour.value, inputMaxCustXhour.value, inputCookiesXsale.value);
+  newLocation.estimate();
+  locations.push(newLocation);
+  const trow = newLocation.renderFila();
+  tbody.appendChild(trow);
+
+  const trActiva = tfoot.querySelector('tr');
+  if (trActiva){
+    tfoot.removeChild(trActiva);
+  }
+  renderTotalesPorHora();
+});
+
 function renderCabeza() {
   const tr = document.createElement('tr');
   const thLocation = document.createElement('th');
