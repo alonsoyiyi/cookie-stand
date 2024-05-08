@@ -171,3 +171,5 @@ function ejecutar() {
   renderTiendas();
   renderTotalesPorHora();
 }
+
+ejecutar();
